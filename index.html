@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estilos de Aprendizaje</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/ded92300d2.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div class="header-container">
@@ -24,7 +24,10 @@
     </div>
     <div class="form-container">
         <form class="eval-form">
-            <fieldset id="question1">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 0%;" id="progressBar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <fieldset id="question-1">
                 <legend>1</legend>
                 <h3>
                     ¿Cuál de las siguientes actividades disfrutas más?
@@ -38,8 +41,11 @@
                 <label><input type="radio" name="pregunta1" value="kinesthetic">
                     Bailar con buena música
                 </label><br>
+                <button class="next" data-target="#question-2">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-2">
+            <fieldset id="question-2" style="display: none;">
                 <legend>2</legend>
                 <h3>
                     ¿Qué programa de televisión prefieres?
@@ -53,8 +59,14 @@
                 <label><input type="radio" name="pregunta2" value="auditive">
                     Noticias del mundo
                 </label><br>
+                <button class="prev" data-target="#question1">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-3">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-3">
+            <fieldset id="question-3" style="display: none;">
                 <legend>3</legend>
                 <h3>
                     Cuando conversas con otra persona, tú:
@@ -68,8 +80,14 @@
                 <label><input type="radio" name="pregunta3" value="kinesthetic">
                     Tiendes a tocarla
                 </label><br>
+                <button class="prev" data-target="#question-2">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-4">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-4">
+            <fieldset id="question-4" style="display: none;">
                 <legend>4</legend>
                 <h3>
                     Si pudieras adquirir uno de los siguientes artículos, ¿cuál
@@ -84,8 +102,14 @@
                 <label><input type="radio" name="pregunta4" value="visual">
                     Un televisor
                 </label><br>
+                <button class="prev" data-target="#question-3">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-5">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-5">
+            <fieldset id="question-5" style="display: none;">
                 <legend>5</legend>
                 <h3>
                     ¿Qué prefieres hacer un sábado por la tarde?
@@ -99,8 +123,14 @@
                 <label><input type="radio" name="pregunta5" value="visual">
                     Ir al cine
                 </label><br>
+                <button class="prev" data-target="#question-4">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-6">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-6">
+            <fieldset id="question-6" style="display: none;">
                 <legend>6</legend>
                 <h3>
                     ¿Qué tipo de exámenes se te facilitan más?
@@ -114,8 +144,14 @@
                 <label><input type="radio" name="pregunta6" value="kinesthetic">
                     Examen de opción múltiple
                 </label><br>
+                <button class="prev" data-target="#question-5">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-7">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-7">
+            <fieldset id="question-7" style="display: none;">
                 <legend>7</legend>
                 <h3>
                     ¿Cómo te orientas más fácilmente?
@@ -129,8 +165,15 @@
                 <label><input type="radio" name="pregunta7" value="kinesthetic">
                     A través de la intuición
                 </label><br>
+                <button class="prev" data-target="#question-6">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-8">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-8">
+            <fieldset id="question-8" style="display: none;">
+                <legend>8</legend>                
                 <h3>
                     ¿En qué prefieres ocupar tu tiempo en un lugar de descanso?
                 </h3>
@@ -143,8 +186,14 @@
                 <label><input type="radio" name="pregunta8" value="kinesthetic">
                     Descansar
                 </label><br>
+                <button class="prev" data-target="#question-7">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-9">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-9">
+            <fieldset id="question-9" style="display: none;">
                 <legend>9</legend>
                 <h3>
                     ¿Qué te halaga más?
@@ -158,8 +207,14 @@
                 <label><input type="radio" name="pregunta9" value="auditive">
                     Que te digan que tienes una conversación interesante
                 </label><br>
+                <button class="prev" data-target="#question-8">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-10">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-10">
+            <fieldset id="question-10" style="display: none;">
                 <legend>10</legend>
                 <h3>
                     ¿Cuál de estos ambientes te atrae más?
@@ -173,8 +228,14 @@
                 <label><input type="radio" name="pregunta10" value="visual">
                     Uno con una hermosa vista al océano
                 </label><br>
+                <button class="prev" data-target="#question-9">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-11">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-11">
+            <fieldset id="question-11" style="display: none;">
                 <legend>11</legend>
                 <h3>
                     ¿De qué manera se te facilita aprender algo?
@@ -188,8 +249,15 @@
                 <label><input type="radio" name="pregunta11" value="kinesthetic">
                     Relacionándolo con algo divertido
                 </label><br>
+                <button class="prev" data-target="#question-10">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-12">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-12">
+            <fieldset id="question-12" style="display: none;">
+                <legend>12</legend>
                 <h3>
                     ¿A qué evento preferirías asistir?
                 </h3>
@@ -202,8 +270,14 @@
                 <label><input type="radio" name="pregunta12" value="visual">
                     A una conferencia
                 </label><br>
+                <button class="prev" data-target="#question-11">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-13">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-13">
+            <fieldset id="question-13" style="display: none;">
                 <legend>13</legend>
                 <h3>
                     ¿De qué manera te formas una opinión de otras personas?
@@ -217,8 +291,14 @@
                 <label><input type="radio" name="pregunta13" value="visual">
                     Por su aspecto
                 </label><br>
+                <button class="prev" data-target="#question-12">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-14">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-14">
+            <fieldset id="question-14" style="display: none;">
                 <legend>14</legend>
                 <h3>
                     ¿Cómo te consideras?
@@ -232,8 +312,14 @@
                 <label><input type="radio" name="pregunta14" value="kinesthetic">
                     Sociable
                 </label><br>
+                <button class="prev" data-target="#question-13">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-15">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-15">
+            <fieldset id="question-15" style="display: none;">
                 <legend>15</legend>
                 <h3>
                     ¿Qué tipo de películas te gustan más?
@@ -247,8 +333,14 @@
                 <label><input type="radio" name="pregunta15" value="kinesthetic">
                     De amor
                 </label><br>
+                <button class="prev" data-target="#question-14">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-16">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-16">
+            <fieldset id="question-16" style="display: none;">
                 <legend>16</legend>
                 <h3>
                     ¿Cómo prefieres mantenerte en contacto con otra persona?
@@ -262,8 +354,14 @@
                 <label><input type="radio" name="pregunta16" value="auditive">
                     Por teléfono
                 </label><br>
+                <button class="prev" data-target="#question-15">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-17">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-17">
+            <fieldset id="question-17" style="display: none;">
                 <legend>17</legend>
                 <h3>
                     ¿Cuál de las siguientes frases se identifican más contigo?
@@ -277,8 +375,14 @@
                 <label><input type="radio" name="pregunta17" value="visual">
                     Es importante que mi coche esté limpio por fuera y por dentro
                 </label><br>
+                <button class="prev" data-target="#question-16">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-18">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-18">
+            <fieldset id="question-18" style="display: none;">
                 <legend>18</legend>
                 <h3>
                     ¿Cómo prefieres pasar el tiempo con tu novia o novio?
@@ -292,8 +396,14 @@
                 <label><input type="radio" name="pregunta18" value="visual">
                     Mirando algo juntos
                 </label><br>
+                <button class="prev" data-target="#question-17">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-19">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-19">
+            <fieldset id="question-19" style="display: none;">
                 <legend>19</legend>
                 <h3>
                     Si no encuentras las llaves en una bolsa
@@ -307,8 +417,14 @@
                 <label><input type="radio" name="pregunta19" value="kinesthetic">
                     Buscas al tacto
                 </label><br>
+                <button class="prev" data-target="#question-18">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-20">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-20">
+            <fieldset id="question-20" style="display: none;">
                 <legend>20</legend>
                 <h3>
                     Cuando tratas de recordar algo, ¿cómo lo haces?
@@ -322,8 +438,14 @@
                 <label><input type="radio" name="pregunta20" value="auditive">
                     A través de sonidos
                 </label><br>
+                <button class="prev" data-target="#question-19">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-21">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-21">
+            <fieldset id="question-21" style="display: none;">
                 <legend>21</legend>
                 <h3>
                     Si tuvieras dinero, ¿qué harías?
@@ -337,8 +459,14 @@
                 <label><input type="radio" name="pregunta21" value="auditive">
                     Adquirir un estudio de grabación
                 </label><br>
+                <button class="prev" data-target="#question-20">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-22">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-22">
+            <fieldset id="question-22" style="display: none;">
                 <legend>22</legend>
                 <h3>
                     ¿Con qué frase te identificas más?
@@ -352,8 +480,14 @@
                 <label><input type="radio" name="pregunta22" value="auditive">
                     Recuerdo el aspecto de alguien, pero no su nombre
                 </label><br>
+                <button class="prev" data-target="#question-21">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-23">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-23">
+            <fieldset id="question-23" style="display: none;">
                 <legend>23</legend>
                 <h3>
                     Si tuvieras que quedarte en una isla desierta, ¿qué
@@ -368,8 +502,14 @@
                 <label><input type="radio" name="pregunta23" value="kinesthetic">
                     Golosinas y comida enlatada
                 </label><br>
+                <button class="prev" data-target="#question-22">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-24">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-24">
+            <fieldset id="question-24" style="display: none;">
                 <legend>24</legend>
                 <h3>
                     ¿Cuál de los siguientes entretenimientos prefieres?
@@ -383,8 +523,14 @@
                 <label><input type="radio" name="pregunta24" value="kinesthetic">
                     Actividades manuales
                 </label><br>
+                <button class="prev" data-target="#question-23">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-25">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-25">
+            <fieldset id="question-25" style="display: none;">
                 <legend>25</legend>
                 <h3>
                     ¿Cómo es tu forma de vestir?
@@ -398,8 +544,14 @@
                 <label><input type="radio" name="pregunta25" value="kinesthetic">
                     Muy informal
                 </label><br>
+                <button class="prev" data-target="#question-24">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-26">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-26">
+            <fieldset id="question-26" style="display: none;">
                 <legend>26</legend>
                 <h3>
                     ¿Qué es lo que más te gusta de una fogata nocturna?
@@ -413,8 +565,14 @@
                 <label><input type="radio" name="pregunta26" value="visual">
                     Mirar el fuego y las estrellas
                 </label><br>
+                <button class="prev" data-target="#question-25">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-27">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-27">
+            <fieldset id="question-27" style="display: none;">
                 <legend>27</legend>
                 <h3>
                     ¿Cómo se te facilita entender algo?
@@ -428,8 +586,14 @@
                 <label><input type="radio" name="pregunta27" value="kinesthetic">
                     Cuando se realiza a través de alguna actividad
                 </label><br>
+                <button class="prev" data-target="#question-26">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-28">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-28">
+            <fieldset id="question-28" style="display: none;">
                 <legend>28</legend>
                 <h3>
                     ¿Por qué te distingues?
@@ -443,8 +607,14 @@
                 <label><input type="radio" name="pregunta28" value="visual">
                     Por ser un buen observador
                 </label><br>
+                <button class="prev" data-target="#question-27">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-29">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-29">
+            <fieldset id="question-29" style="display: none;">
                 <legend>29</legend>
                 <h3>
                     ¿Qué es lo que más disfrutas de un amanecer?
@@ -458,8 +628,14 @@
                 <label><input type="radio" name="pregunta29" value="auditive">
                     El canto de las aves
                 </label><br>
+                <button class="prev" data-target="#question-28">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-30">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-30">
+            <fieldset id="question-30" style="display: none;">
                 <legend>30</legend>
                 <h3>
                     Si pudieras elegir ¿qué preferirías ser?
@@ -473,8 +649,14 @@
                 <label><input type="radio" name="pregunta30" value="visual">
                     Un gran pintor
                 </label><br>
+                <button class="prev" data-target="#question-29">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-31">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-31">
+            <fieldset id="question-31" style="display: none;">
                 <legend>31</legend>
                 <h3>
                     Cuando eliges tu ropa, ¿qué es lo más importante para ti?
@@ -488,8 +670,14 @@
                 <label><input type="radio" name="pregunta31" value="kinesthetic">
                     Que sea cómoda
                 </label><br>
+                <button class="prev" data-target="#question-30">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-32">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-32">
+            <fieldset id="question-32" style="display: none;">
                 <legend>32</legend>
                 <h3>
                     ¿Qué es lo que más disfrutas de una habitación?
@@ -503,8 +691,14 @@
                 <label><input type="radio" name="pregunta32" value="visual">
                     Que esté limpia y ordenada
                 </label><br>
+                <button class="prev" data-target="#question-31">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-33">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-33">
+            <fieldset id="question-33" style="display: none;">
                 <legend>33</legend>
                 <h3>
                     ¿Qué es más sexy para ti?
@@ -518,8 +712,14 @@
                 <label><input type="radio" name="pregunta33" value="auditive">
                     Cierto tipo de música
                 </label><br>
+                <button class="prev" data-target="#question-32">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-34">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-34">
+            <fieldset id="question-34" style="display: none;">
                 <legend>34</legend>
                 <h3>
                     ¿A qué tipo de espectáculo preferirías asistir?
@@ -533,8 +733,14 @@
                 <label><input type="radio" name="pregunta34" value="kinesthetic">
                     A una muestra gastronómica
                 </label><br>
+                <button class="prev" data-target="#question-33">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-35">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-35">
+            <fieldset id="question-35" style="display: none;">
                 <legend>35</legend>
                 <h3>
                     ¿Qué te atrae más de una persona?
@@ -548,8 +754,14 @@
                 <label><input type="radio" name="pregunta35" value="auditive">
                     Su conversación
                 </label><br>
+                <button class="prev" data-target="#question-34">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-36">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-36">
+            <fieldset id="question-36" style="display: none;">
                 <legend>36</legend>
                 <h3>
                     Cuando vas de compras, ¿en dónde pasas mucho tiempo?
@@ -563,8 +775,14 @@
                 <label><input type="radio" name="pregunta36" value="auditive">
                     En una tienda de discos
                 </label><br>
+                <button class="prev" data-target="#question-35">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-37">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-37">
+            <fieldset id="question-37" style="display: none;">
                 <legend>37</legend>
                 <h3>
                     ¿Cuáles tu idea de una noche romántica?
@@ -578,8 +796,14 @@
                 <label><input type="radio" name="pregunta37" value="kinesthetic">
                     Bailando tranquilamente
                 </label><br>
+                <button class="prev" data-target="#question-36">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-38">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-38">
+            <fieldset id="question-38" style="display: none;">
                 <legend>38</legend>
                 <h3>
                     ¿Qué es lo que más disfrutas de viajar?
@@ -593,8 +817,14 @@
                 <label><input type="radio" name="pregunta38" value="auditive">
                     Aprender sobre otras costumbres
                 </label><br>
+                <button class="prev" data-target="#question-37">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-39">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-39">
+            <fieldset id="question-39" style="display: none;">
                 <legend>39</legend>
                 <h3>
                     Cuando estás en la ciudad, ¿qué es lo que más hechas de
@@ -609,8 +839,14 @@
                 <label><input type="radio" name="pregunta39" value="auditive">
                     La tranquilidad
                 </label><br>
+                <button class="prev" data-target="#question-38">
+                    Volver
+                </button>
+                <button class="next" data-target="#question-40">
+                    Continuar
+                </button>
             </fieldset>
-            <fieldset id="question-40">
+            <fieldset id="question-40" style="display: none;">
                 <legend>40</legend>
                 <h3>
                     Si te ofrecieran uno de los siguientes empleos, ¿cuál
@@ -625,10 +861,14 @@
                 <label><input type="radio" name="pregunta40" value="visual">
                     Director de una revista
                 </label><br>
+                <button class="prev" data-target="#question-39">
+                    Volver
+                </button>
+                <button class="next" >
+                    Continuar
+                </button>
             </fieldset>
         </form>
-        <button class="prev">Anterior</button>
-        <button class="next">Siguiente</button>
     </div>
     <script src="main.js"></script>
 </body>
