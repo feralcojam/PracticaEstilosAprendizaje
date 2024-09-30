@@ -4,8 +4,632 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estilos de Aprendizaje</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ded92300d2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div class="header-container">
+        <h1>¡Conoce tu estilo de aprendizaje!</h1>
+        <h2>Contesta este test y descubre cuál es tu estilo de
+            aprendizaje.
+        </h2>
+    </div>
+    <div class="body-container">
+        <h2>¿Cuál puede ser tu estilo de aprendizaje?</h2>
+        <p>
+            Tu estilo de aprendizaje puede ser <b>Visual</b>, 
+            <b>Auditivo</b> y <b>Kinestésico</b>. <br>
+            Contesta todas las preguntas para conocer cuál es el tuyo.
+        </p>
+    </div>
+    <div class="form-container">
+        <form class="eval-form">
+            <fieldset id="question1">
+                <legend>1</legend>
+                <h3>
+                    ¿Cuál de las siguientes actividades disfrutas más?
+                </h3>
+                <label><input type="radio" name="pregunta1" value="auditive">
+                    Escuchar música
+                </label><br>
+                <label><input type="radio" name="pregunta1" value="visual">
+                    Ver películas
+                </label><br>
+                <label><input type="radio" name="pregunta1" value="kinesthetic">
+                    Bailar con buena música
+                </label><br>
+            </fieldset>
+            <fieldset id="question-2">
+                <legend>2</legend>
+                <h3>
+                    ¿Qué programa de televisión prefieres?
+                </h3>
+                <label><input type="radio" name="pregunta2" value="visual">
+                    Reportajes de descubrimientos y lugares
+                </label><br>
+                <label><input type="radio" name="pregunta2" value="kinesthetic">
+                    Cómico y de entretenimiento
+                </label><br>
+                <label><input type="radio" name="pregunta2" value="auditive">
+                    Noticias del mundo
+                </label><br>
+            </fieldset>
+            <fieldset id="question-3">
+                <legend>3</legend>
+                <h3>
+                    Cuando conversas con otra persona, tú:
+                </h3>
+                <label><input type="radio" name="pregunta3" value="auditive">
+                    La escuchas atentamente
+                </label><br>
+                <label><input type="radio" name="pregunta3" value="visual">
+                    La observas
+                </label><br>
+                <label><input type="radio" name="pregunta3" value="kinesthetic">
+                    Tiendes a tocarla
+                </label><br>
+            </fieldset>
+            <fieldset id="question-4">
+                <legend>4</legend>
+                <h3>
+                    Si pudieras adquirir uno de los siguientes artículos, ¿cuál
+                    elegirías?
+                </h3>
+                <label><input type="radio" name="pregunta4" value="kinesthetic">
+                    Un jacuzzi
+                </label><br>
+                <label><input type="radio" name="pregunta4" value="auditive">
+                    Un estéreo
+                </label><br>
+                <label><input type="radio" name="pregunta4" value="visual">
+                    Un televisor
+                </label><br>
+            </fieldset>
+            <fieldset id="question-5">
+                <legend>5</legend>
+                <h3>
+                    ¿Qué prefieres hacer un sábado por la tarde?
+                </h3>
+                <label><input type="radio" name="pregunta5" value="kinesthetic">
+                    Quedarte en casa
+                </label><br>
+                <label><input type="radio" name="pregunta5" value="auditive">
+                    Ir a un concierto
+                </label><br>
+                <label><input type="radio" name="pregunta5" value="visual">
+                    Ir al cine
+                </label><br>
+            </fieldset>
+            <fieldset id="question-6">
+                <legend>6</legend>
+                <h3>
+                    ¿Qué tipo de exámenes se te facilitan más?
+                </h3>
+                <label><input type="radio" name="pregunta6" value="auditive">
+                    Examen oral
+                </label><br>
+                <label><input type="radio" name="pregunta6" value="visual">
+                    Examen escrito
+                </label><br>
+                <label><input type="radio" name="pregunta6" value="kinesthetic">
+                    Examen de opción múltiple
+                </label><br>
+            </fieldset>
+            <fieldset id="question-7">
+                <legend>7</legend>
+                <h3>
+                    ¿Cómo te orientas más fácilmente?
+                </h3>
+                <label><input type="radio" name="pregunta7" value="visual">
+                    Mediante el uso de un mapa
+                </label><br>
+                <label><input type="radio" name="pregunta7" value="auditive">
+                    Pidiendo indicaciones
+                </label><br>
+                <label><input type="radio" name="pregunta7" value="kinesthetic">
+                    A través de la intuición
+                </label><br>
+            </fieldset>
+            <fieldset id="question-8">
+                <h3>
+                    ¿En qué prefieres ocupar tu tiempo en un lugar de descanso?
+                </h3>
+                <label><input type="radio" name="pregunta8" value="auditive">
+                    Pensar
+                </label><br>
+                <label><input type="radio" name="pregunta8" value="visual">
+                    Caminar por los alrededores
+                </label><br>
+                <label><input type="radio" name="pregunta8" value="kinesthetic">
+                    Descansar
+                </label><br>
+            </fieldset>
+            <fieldset id="question-9">
+                <legend>9</legend>
+                <h3>
+                    ¿Qué te halaga más?
+                </h3>
+                <label><input type="radio" name="pregunta9" value="visual">
+                    Que te digan que tienes buen aspecto
+                </label><br>
+                <label><input type="radio" name="pregunta9" value="kinesthetic">
+                    Que te digan que tienes un trato muy agradable
+                </label><br>
+                <label><input type="radio" name="pregunta9" value="auditive">
+                    Que te digan que tienes una conversación interesante
+                </label><br>
+            </fieldset>
+            <fieldset id="question-10">
+                <legend>10</legend>
+                <h3>
+                    ¿Cuál de estos ambientes te atrae más?
+                </h3>
+                <label><input type="radio" name="pregunta10" value="kinesthetic">
+                    Uno en el que se sienta un clima agradable
+                </label><br>
+                <label><input type="radio" name="pregunta10" value="auditive">
+                    Uno en el que se escuchen las olas del mar
+                </label><br>
+                <label><input type="radio" name="pregunta10" value="visual">
+                    Uno con una hermosa vista al océano
+                </label><br>
+            </fieldset>
+            <fieldset id="question-11">
+                <legend>11</legend>
+                <h3>
+                    ¿De qué manera se te facilita aprender algo?
+                </h3>
+                <label><input type="radio" name="pregunta11" value="auditive">
+                    Repitiendo en voz alta
+                </label><br>
+                <label><input type="radio" name="pregunta11" value="visual">
+                    Escribiéndolo varias veces
+                </label><br>
+                <label><input type="radio" name="pregunta11" value="kinesthetic">
+                    Relacionándolo con algo divertido
+                </label><br>
+            </fieldset>
+            <fieldset id="question-12">
+                <h3>
+                    ¿A qué evento preferirías asistir?
+                </h3>
+                <label><input type="radio" name="pregunta12" value="auditive">
+                    A una reunión social
+                </label><br>
+                <label><input type="radio" name="pregunta12" value="kinesthetic">
+                    A una exposición de arte
+                </label><br>
+                <label><input type="radio" name="pregunta12" value="visual">
+                    A una conferencia
+                </label><br>
+            </fieldset>
+            <fieldset id="question-13">
+                <legend>13</legend>
+                <h3>
+                    ¿De qué manera te formas una opinión de otras personas?
+                </h3>
+                <label><input type="radio" name="pregunta13" value="auditive">
+                    Por la sinceridad en su voz
+                </label><br>
+                <label><input type="radio" name="pregunta13" value="kinesthetic">
+                    Por la forma de estrecharte la mano
+                </label><br>
+                <label><input type="radio" name="pregunta13" value="visual">
+                    Por su aspecto
+                </label><br>
+            </fieldset>
+            <fieldset id="question-14">
+                <legend>14</legend>
+                <h3>
+                    ¿Cómo te consideras?
+                </h3>
+                <label><input type="radio" name="pregunta14" value="visual">
+                    Atlético
+                </label><br>
+                <label><input type="radio" name="pregunta14" value="auditive">
+                    Intelectual
+                </label><br>
+                <label><input type="radio" name="pregunta14" value="kinesthetic">
+                    Sociable
+                </label><br>
+            </fieldset>
+            <fieldset id="question-15">
+                <legend>15</legend>
+                <h3>
+                    ¿Qué tipo de películas te gustan más?
+                </h3>
+                <label><input type="radio" name="pregunta15" value="auditive">
+                    Clásicas
+                </label><br>
+                <label><input type="radio" name="pregunta15" value="visual">
+                    De acción
+                </label><br>
+                <label><input type="radio" name="pregunta15" value="kinesthetic">
+                    De amor
+                </label><br>
+            </fieldset>
+            <fieldset id="question-16">
+                <legend>16</legend>
+                <h3>
+                    ¿Cómo prefieres mantenerte en contacto con otra persona?
+                </h3>
+                <label><input type="radio" name="pregunta16" value="visual">
+                    Por correo electrónico
+                </label><br>
+                <label><input type="radio" name="pregunta16" value="kinesthetic">
+                    Tomando un café juntos
+                </label><br>
+                <label><input type="radio" name="pregunta16" value="auditive">
+                    Por teléfono
+                </label><br>
+            </fieldset>
+            <fieldset id="question-17">
+                <legend>17</legend>
+                <h3>
+                    ¿Cuál de las siguientes frases se identifican más contigo?
+                </h3>
+                <label><input type="radio" name="pregunta17" value="kinesthetic">
+                    Me gusta que mi coche se sienta bien al conducirlo
+                </label><br>
+                <label><input type="radio" name="pregunta17" value="auditive">
+                    Percibo hasta el mas ligero ruido que hace mi coche
+                </label><br>
+                <label><input type="radio" name="pregunta17" value="visual">
+                    Es importante que mi coche esté limpio por fuera y por dentro
+                </label><br>
+            </fieldset>
+            <fieldset id="question-18">
+                <legend>18</legend>
+                <h3>
+                    ¿Cómo prefieres pasar el tiempo con tu novia o novio?
+                </h3>
+                <label><input type="radio" name="pregunta18" value="auditive">
+                    Conversando
+                </label><br>
+                <label><input type="radio" name="pregunta18" value="kinesthetic">
+                    Acariciándose
+                </label><br>
+                <label><input type="radio" name="pregunta18" value="visual">
+                    Mirando algo juntos
+                </label><br>
+            </fieldset>
+            <fieldset id="question-19">
+                <legend>19</legend>
+                <h3>
+                    Si no encuentras las llaves en una bolsa
+                </h3>
+                <label><input type="radio" name="pregunta19" value="visual">
+                    La buscas mirando
+                </label><br>
+                <label><input type="radio" name="pregunta19" value="auditive">
+                    Sacudes la bolsa para oír el ruido
+                </label><br>
+                <label><input type="radio" name="pregunta19" value="kinesthetic">
+                    Buscas al tacto
+                </label><br>
+            </fieldset>
+            <fieldset id="question-20">
+                <legend>20</legend>
+                <h3>
+                    Cuando tratas de recordar algo, ¿cómo lo haces?
+                </h3>
+                <label><input type="radio" name="pregunta20" value="visual">
+                    A través de imágenes
+                </label><br>
+                <label><input type="radio" name="pregunta20" value="kinesthetic">
+                    A través de emociones
+                </label><br>
+                <label><input type="radio" name="pregunta20" value="auditive">
+                    A través de sonidos
+                </label><br>
+            </fieldset>
+            <fieldset id="question-21">
+                <legend>21</legend>
+                <h3>
+                    Si tuvieras dinero, ¿qué harías?
+                </h3>
+                <label><input type="radio" name="pregunta21" value="kinesthetic">
+                    Comprar una casa
+                </label><br>
+                <label><input type="radio" name="pregunta21" value="visual">
+                    Viajar y conocer el mundo
+                </label><br>
+                <label><input type="radio" name="pregunta21" value="auditive">
+                    Adquirir un estudio de grabación
+                </label><br>
+            </fieldset>
+            <fieldset id="question-22">
+                <legend>22</legend>
+                <h3>
+                    ¿Con qué frase te identificas más?
+                </h3>
+                <label><input type="radio" name="pregunta22" value="kinesthetic">
+                    Reconozco a las personas por su voz
+                </label><br>
+                <label><input type="radio" name="pregunta22" value="visual">
+                    No recuerdo el aspecto de la gente
+                </label><br>
+                <label><input type="radio" name="pregunta22" value="auditive">
+                    Recuerdo el aspecto de alguien, pero no su nombre
+                </label><br>
+            </fieldset>
+            <fieldset id="question-23">
+                <legend>23</legend>
+                <h3>
+                    Si tuvieras que quedarte en una isla desierta, ¿qué
+                    preferirías llevar contigo?
+                </h3>
+                <label><input type="radio" name="pregunta23" value="visual">
+                    Algunos buenos libros
+                </label><br>
+                <label><input type="radio" name="pregunta23" value="auditive">
+                    Un radio portátil de alta frecuencia
+                </label><br>
+                <label><input type="radio" name="pregunta23" value="kinesthetic">
+                    Golosinas y comida enlatada
+                </label><br>
+            </fieldset>
+            <fieldset id="question-24">
+                <legend>24</legend>
+                <h3>
+                    ¿Cuál de los siguientes entretenimientos prefieres?
+                </h3>
+                <label><input type="radio" name="pregunta24" value="auditive">
+                    Tocar un instrumento musical
+                </label><br>
+                <label><input type="radio" name="pregunta24" value="visual">
+                    Sacar fotografías
+                </label><br>
+                <label><input type="radio" name="pregunta24" value="kinesthetic">
+                    Actividades manuales
+                </label><br>
+            </fieldset>
+            <fieldset id="question-25">
+                <legend>25</legend>
+                <h3>
+                    ¿Cómo es tu forma de vestir?
+                </h3>
+                <label><input type="radio" name="pregunta25" value="visual">
+                    Impecable
+                </label><br>
+                <label><input type="radio" name="pregunta25" value="auditive">
+                    Informal
+                </label><br>
+                <label><input type="radio" name="pregunta25" value="kinesthetic">
+                    Muy informal
+                </label><br>
+            </fieldset>
+            <fieldset id="question-26">
+                <legend>26</legend>
+                <h3>
+                    ¿Qué es lo que más te gusta de una fogata nocturna?
+                </h3>
+                <label><input type="radio" name="pregunta26" value="kinesthetic">
+                    El calor del fuego y los bombones asados
+                </label><br>
+                <label><input type="radio" name="pregunta26" value="auditive">
+                    El sonido del fuego quemando la leña
+                </label><br>
+                <label><input type="radio" name="pregunta26" value="visual">
+                    Mirar el fuego y las estrellas
+                </label><br>
+            </fieldset>
+            <fieldset id="question-27">
+                <legend>27</legend>
+                <h3>
+                    ¿Cómo se te facilita entender algo?
+                </h3>
+                <label><input type="radio" name="pregunta27" value="auditive">
+                    Cuando te lo explican verbalmente
+                </label><br>
+                <label><input type="radio" name="pregunta27" value="visual">
+                    Cuando utilizan medios visuales
+                </label><br>
+                <label><input type="radio" name="pregunta27" value="kinesthetic">
+                    Cuando se realiza a través de alguna actividad
+                </label><br>
+            </fieldset>
+            <fieldset id="question-28">
+                <legend>28</legend>
+                <h3>
+                    ¿Por qué te distingues?
+                </h3>
+                <label><input type="radio" name="pregunta28" value="kinesthetic">
+                    Por tener una gran intuición
+                </label><br>
+                <label><input type="radio" name="pregunta28" value="auditive">
+                    Por ser un buen conversador
+                </label><br>
+                <label><input type="radio" name="pregunta28" value="visual">
+                    Por ser un buen observador
+                </label><br>
+            </fieldset>
+            <fieldset id="question-29">
+                <legend>29</legend>
+                <h3>
+                    ¿Qué es lo que más disfrutas de un amanecer?
+                </h3>
+                <label><input type="radio" name="pregunta29" value="kinesthetic">
+                    La emoción de vivir un nuevo día
+                </label><br>
+                <label><input type="radio" name="pregunta29" value="visual">
+                    Las tonalidades del cielo
+                </label><br>
+                <label><input type="radio" name="pregunta29" value="auditive">
+                    El canto de las aves
+                </label><br>
+            </fieldset>
+            <fieldset id="question-30">
+                <legend>30</legend>
+                <h3>
+                    Si pudieras elegir ¿qué preferirías ser?
+                </h3>
+                <label><input type="radio" name="pregunta30" value="kinesthetic">
+                    Un gran médico
+                </label><br>
+                <label><input type="radio" name="pregunta30" value="auditive">
+                    Un gran músico
+                </label><br>
+                <label><input type="radio" name="pregunta30" value="visual">
+                    Un gran pintor
+                </label><br>
+            </fieldset>
+            <fieldset id="question-31">
+                <legend>31</legend>
+                <h3>
+                    Cuando eliges tu ropa, ¿qué es lo más importante para ti?
+                </h3>
+                <label><input type="radio" name="pregunta31" value="auditive">
+                    Que sea adecuada
+                </label><br>
+                <label><input type="radio" name="pregunta31" value="visual">
+                    Que luzca bien
+                </label><br>
+                <label><input type="radio" name="pregunta31" value="kinesthetic">
+                    Que sea cómoda
+                </label><br>
+            </fieldset>
+            <fieldset id="question-32">
+                <legend>32</legend>
+                <h3>
+                    ¿Qué es lo que más disfrutas de una habitación?
+                </h3>
+                <label><input type="radio" name="pregunta32" value="auditive">
+                    Que sea silenciosa
+                </label><br>
+                <label><input type="radio" name="pregunta32" value="kinesthetic">
+                    Que sea confortable
+                </label><br>
+                <label><input type="radio" name="pregunta32" value="visual">
+                    Que esté limpia y ordenada
+                </label><br>
+            </fieldset>
+            <fieldset id="question-33">
+                <legend>33</legend>
+                <h3>
+                    ¿Qué es más sexy para ti?
+                </h3>
+                <label><input type="radio" name="pregunta33" value="visual">
+                    Una iluminación tenue
+                </label><br>
+                <label><input type="radio" name="pregunta33" value="kinesthetic">
+                    El perfume
+                </label><br>
+                <label><input type="radio" name="pregunta33" value="auditive">
+                    Cierto tipo de música
+                </label><br>
+            </fieldset>
+            <fieldset id="question-34">
+                <legend>34</legend>
+                <h3>
+                    ¿A qué tipo de espectáculo preferirías asistir?
+                </h3>
+                <label><input type="radio" name="pregunta34" value="auditive">
+                    A un concierto de música
+                </label><br>
+                <label><input type="radio" name="pregunta34" value="visual">
+                    A un espectáculo de magia
+                </label><br>
+                <label><input type="radio" name="pregunta34" value="kinesthetic">
+                    A una muestra gastronómica
+                </label><br>
+            </fieldset>
+            <fieldset id="question-35">
+                <legend>35</legend>
+                <h3>
+                    ¿Qué te atrae más de una persona?
+                </h3>
+                <label><input type="radio" name="pregunta35" value="kinesthetic">
+                    Su trato y forma de ser
+                </label><br>
+                <label><input type="radio" name="pregunta35" value="visual">
+                    Su aspecto físico
+                </label><br>
+                <label><input type="radio" name="pregunta35" value="auditive">
+                    Su conversación
+                </label><br>
+            </fieldset>
+            <fieldset id="question-36">
+                <legend>36</legend>
+                <h3>
+                    Cuando vas de compras, ¿en dónde pasas mucho tiempo?
+                </h3>
+                <label><input type="radio" name="pregunta36" value="visual">
+                    En una librería
+                </label><br>
+                <label><input type="radio" name="pregunta36" value="kinesthetic">
+                    En una perfumería
+                </label><br>
+                <label><input type="radio" name="pregunta36" value="auditive">
+                    En una tienda de discos
+                </label><br>
+            </fieldset>
+            <fieldset id="question-37">
+                <legend>37</legend>
+                <h3>
+                    ¿Cuáles tu idea de una noche romántica?
+                </h3>
+                <label><input type="radio" name="pregunta37" value="visual">
+                    A la luz de las velas
+                </label><br>
+                <label><input type="radio" name="pregunta37" value="auditive">
+                    Con música romántica
+                </label><br>
+                <label><input type="radio" name="pregunta37" value="kinesthetic">
+                    Bailando tranquilamente
+                </label><br>
+            </fieldset>
+            <fieldset id="question-38">
+                <legend>38</legend>
+                <h3>
+                    ¿Qué es lo que más disfrutas de viajar?
+                </h3>
+                <label><input type="radio" name="pregunta38" value="kinesthetic">
+                    Conocer personas y hacer nuevos amigos
+                </label><br>
+                <label><input type="radio" name="pregunta38" value="visual">
+                    Conocer lugares nuevos
+                </label><br>
+                <label><input type="radio" name="pregunta38" value="auditive">
+                    Aprender sobre otras costumbres
+                </label><br>
+            </fieldset>
+            <fieldset id="question-39">
+                <legend>39</legend>
+                <h3>
+                    Cuando estás en la ciudad, ¿qué es lo que más hechas de
+                    menos del campo?
+                </h3>
+                <label><input type="radio" name="pregunta39" value="kinesthetic">
+                    El aire limpio y refrescante
+                </label><br>
+                <label><input type="radio" name="pregunta39" value="visual">
+                    Los paisajes
+                </label><br>
+                <label><input type="radio" name="pregunta39" value="auditive">
+                    La tranquilidad
+                </label><br>
+            </fieldset>
+            <fieldset id="question-40">
+                <legend>40</legend>
+                <h3>
+                    Si te ofrecieran uno de los siguientes empleos, ¿cuál
+                    elegirías?
+                </h3>
+                <label><input type="radio" name="pregunta40" value="auditive">
+                    Director de una estación de radio
+                </label><br>
+                <label><input type="radio" name="pregunta40" value="kinesthetic">
+                    Director de un club deportivo
+                </label><br>
+                <label><input type="radio" name="pregunta40" value="visual">
+                    Director de una revista
+                </label><br>
+            </fieldset>
+        </form>
+        <button class="prev">Anterior</button>
+        <button class="next">Siguiente</button>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,4 @@
+/* oculta las demás preguntas*/
+[id^="question-"] {
+    display: none;
+}
